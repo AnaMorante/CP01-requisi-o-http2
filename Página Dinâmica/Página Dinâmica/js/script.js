@@ -11,5 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return data;
     };
 
+    clientData.addEventListener('click', function(){
+        fetch(url + posts, get)
+            .then(responseHolder)
+    })
+
 });
 
