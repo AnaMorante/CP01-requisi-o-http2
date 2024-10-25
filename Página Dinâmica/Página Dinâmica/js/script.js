@@ -6,5 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const clientData = document.getElementById('infoClient');
     const infoDisplay = document.getElementById('infoDisplay');
 
+    async function responseHolder(response) {
+        const data = await response.json();
+        return data;
+    };
+
 });
 
